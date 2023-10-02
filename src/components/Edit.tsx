@@ -27,7 +27,7 @@ export const Edit = () => {
     (user: User) => user.id === Number(userId),
   )
   const navigate = useNavigate()
-  const [formValues, setFormValues] = useState<any>(editedUser)
+  const [formValues, setFormValues] = useState<User>(editedUser)
 
   const handleInputChange = (
     event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,

@@ -119,6 +119,7 @@ export const Users = () => {
                     .map((row: User) => (
                       <TableRow
                         key={row.id}
+                        hover
                         sx={{
                           '&:last-child td, &:last-child th': { border: 0 },
                         }}
